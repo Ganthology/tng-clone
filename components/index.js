@@ -1,3 +1,4 @@
 import HomescreenHeader from './HomescreenHeader';
+import HomeScreenMid from './HomescreenMid';
 
-export {HomescreenHeader};
+export {HomescreenHeader, HomeScreenMid};

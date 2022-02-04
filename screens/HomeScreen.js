@@ -1,28 +1,36 @@
 import React from 'react';
 import {
   SafeAreaView,
+  ScrollView,
   View,
   StyleSheet,
   Text,
   StatusBar,
   Dimensions,
 } from 'react-native';
-import {HomescreenHeader} from '../components';
+import {HomescreenHeader, HomeScreenMid} from '../components';
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle='light-content' />
-      <View style={styles.header}>
-        <HomescreenHeader />
-      </View>
+      {StatusBar.setBarStyle('light-content', true)}
+      <ScrollView>
+        <View style={styles.header}>
+          <HomescreenHeader />
+        </View>
+        <View style={styles.mid}>
+          <HomeScreenMid />
+        </View>
+      </ScrollView>
+
       {/* <View id='Middle section'>
+        <Text>Ads</Text>
         <Text>Go+, My Rewards</Text>
         <Text>List of services (Link to another stack)</Text>
         <Text>Discover more (Link to modal)</Text>
         <Text>Low Balance reminder</Text>
-      </View>
-      <View id='Highlights'>
+      </View> */}
+      {/* <View id='Highlights'>
         <Text>Flatlist of campaigns (Link to modal)</Text>
       </View>
       <View id='Promotions'>
@@ -41,11 +49,14 @@ const {height, width} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    // justifyContent: 'center',
+    // justifyContent: 'space-evenly',
     // alignItems: 'center',
     backgroundColor: '#1976d2',
   },
   header: {
-    height: height * 0.2,
+    height: height * 0.3,
+  },
+  mid: {
+    height: height * 0.7,
   },
 });
