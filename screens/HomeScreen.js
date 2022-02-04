@@ -1,15 +1,20 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  StyleSheet,
+  Text,
+  StatusBar,
+  Dimensions,
+} from 'react-native';
+import {HomescreenHeader} from '../components';
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>This is Home Screen</Text>
-      <View id='Header section'>
-        <Text>
-          Blue Part (eWallet Balance, Account Button, Reload, Transaction
-          History)
-        </Text>
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle='light-content' />
+      <View style={styles.header}>
+        <HomescreenHeader />
       </View>
       <View id='Middle section'>
         <Text>Go+, My Rewards</Text>
@@ -26,16 +31,21 @@ const HomeScreen = () => {
       <View id='Footer'>
         <Text>Image of tng logo and Alipay Partner</Text>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
 export default HomeScreen;
 
+const {height, width} = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   container: {
-    padding: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    backgroundColor: '#1976d2',
+  },
+  header: {
+    height: height * 0.2,
   },
 });
