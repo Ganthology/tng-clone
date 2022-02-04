@@ -16,7 +16,7 @@ const HomeScreen = () => {
       <View style={styles.header}>
         <HomescreenHeader />
       </View>
-      <View id='Middle section'>
+      {/* <View id='Middle section'>
         <Text>Go+, My Rewards</Text>
         <Text>List of services (Link to another stack)</Text>
         <Text>Discover more (Link to modal)</Text>
@@ -30,7 +30,7 @@ const HomeScreen = () => {
       </View>
       <View id='Footer'>
         <Text>Image of tng logo and Alipay Partner</Text>
-      </View>
+      </View> */}
     </SafeAreaView>
   );
 };

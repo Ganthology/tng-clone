@@ -7,7 +7,8 @@ import {
   Image,
   Dimensions,
 } from 'react-native';
-import userIcon from '../assets/icons/user.png';
+import {userIcon} from '../assets/icons';
+import PaymentOption from './PaymentOption';
 
 const HomescreenHeader = () => {
   return (
@@ -33,7 +34,10 @@ const HomescreenHeader = () => {
           </Text>
         </TouchableOpacity>
       </View>
-      <View id='payment-options' />
+      <View style={styles.paymentOption}>
+        <PaymentOption />
+      </View>
+      <View style={styles.bottomPad} />
     </View>
   );
 };
@@ -105,5 +109,17 @@ const styles = StyleSheet.create({
   userIcon: {
     width: width * 0.05,
     height: width * 0.05,
+  },
+  paymentOption: {
+    paddingTop: 20,
+  },
+  bottomPad: {
+    position: 'absolute',
+    backgroundColor: 'white',
+    height: width * 0.15,
+    width: width,
+    top: width * 0.5,
+    left: 0,
+    zIndex: -1,
   },
 });
