@@ -55,5 +55,5 @@ const styles = StyleSheet.create({
   cardImage: {height: 35, width: 35},
   titleContainer: {flexDirection: 'column', paddingLeft: 10},
   title: {color: 'black', fontSize: 15, fontWeight: '600'},
-  subtitle: {color: 'grey', fontSize: 12},
+  subtitle: {color: 'black', fontSize: 12},
 });
