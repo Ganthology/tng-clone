@@ -7,21 +7,31 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
-import {moreIcon} from '../assets/icons';
+import {
+  moreIcon,
+  tollIcon,
+  parkingIcon,
+  carInsureIcon,
+  walletSafeIcon,
+  prepaidIcon,
+  billsIcon,
+  aplusrewardsIcon,
+} from '../assets/icons';
+import {ctosLogo, bpLogo, familymartLogo, tnbLogo} from '../assets/brands';
 
 const ServicesSection = () => {
   const testData = [
-    {id: 1, icon: moreIcon, title: 'Toll'},
-    {id: 2, icon: moreIcon, title: 'Parking'},
-    {id: 3, icon: moreIcon, title: 'CarInsure'},
-    {id: 4, icon: moreIcon, title: 'WalletSafe'},
-    {id: 5, icon: moreIcon, title: 'Prepaid'},
-    {id: 6, icon: moreIcon, title: 'Bills'},
-    {id: 7, icon: moreIcon, title: 'TNB'},
-    {id: 8, icon: moreIcon, title: 'A+ Rewards'},
-    {id: 9, icon: moreIcon, title: 'BPHealthcare'},
-    {id: 10, icon: moreIcon, title: 'FamilyMart'},
-    {id: 11, icon: moreIcon, title: 'CTOS Report'},
+    {id: 1, icon: tollIcon, title: 'Toll'},
+    {id: 2, icon: parkingIcon, title: 'Parking'},
+    {id: 3, icon: carInsureIcon, title: 'CarInsure'},
+    {id: 4, icon: walletSafeIcon, title: 'WalletSafe'},
+    {id: 5, icon: prepaidIcon, title: 'Prepaid'},
+    {id: 6, icon: billsIcon, title: 'Bills'},
+    {id: 7, icon: tnbLogo, title: 'TNB'},
+    {id: 8, icon: aplusrewardsIcon, title: 'A+ Rewards'},
+    {id: 9, icon: bpLogo, title: 'BPHealthcare'},
+    {id: 10, icon: familymartLogo, title: 'FamilyMart'},
+    {id: 11, icon: ctosLogo, title: 'CTOS Report'},
     {id: 12, icon: moreIcon, title: 'More'},
   ];
 
@@ -74,6 +84,7 @@ const styles = StyleSheet.create({
     width: 45,
     height: 45,
     marginBottom: 15,
+    resizeMode: 'contain',
   },
   serviceLabel: {
     position: 'absolute',

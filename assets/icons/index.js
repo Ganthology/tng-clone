@@ -7,6 +7,13 @@ import dollarIcon from './dollar.png';
 import giftboxIcon from './giftbox.png';
 import moreIcon from './more.png';
 import rightArrow from './right-arrow.png';
+import tollIcon from './TollIcon.png';
+import parkingIcon from './ParkingIcon.png';
+import carInsureIcon from './CarInsureIcon.png';
+import walletSafeIcon from './WalletSafeIcon.png';
+import prepaidIcon from './PrepaidIcon.png';
+import billsIcon from './BillsIcon.png';
+import aplusrewardsIcon from './A+RewardsIcon.png';
 
 export {
   userIcon,
@@ -18,4 +25,11 @@ export {
   giftboxIcon,
   moreIcon,
   rightArrow,
+  tollIcon,
+  parkingIcon,
+  carInsureIcon,
+  walletSafeIcon,
+  prepaidIcon,
+  billsIcon,
+  aplusrewardsIcon,
 };
