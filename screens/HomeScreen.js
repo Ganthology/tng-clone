@@ -8,19 +8,23 @@ import {
   StatusBar,
   Dimensions,
 } from 'react-native';
-import {HomescreenHeader, HomeScreenMid} from '../components';
+import {HomescreenHeader, HomeScreenMid, Highlights} from '../components';
+import {adImage2, adImage3, adImage4} from '../assets/ads';
 
 const HomeScreen = () => {
+  const campaignItems = [
+    {id: 1, image: adImage2},
+    {id: 2, image: adImage3},
+    {id: 3, image: adImage4},
+  ];
+
   return (
     <SafeAreaView style={styles.container}>
       {StatusBar.setBarStyle('light-content', true)}
       <ScrollView>
-        <View style={styles.header}>
-          <HomescreenHeader />
-        </View>
-        <View style={styles.mid}>
-          <HomeScreenMid />
-        </View>
+        <HomescreenHeader />
+        <HomeScreenMid />
+        <Highlights campaignItems={campaignItems} />
       </ScrollView>
 
       {/* <View id='Middle section'>
@@ -52,11 +56,5 @@ const styles = StyleSheet.create({
     // justifyContent: 'space-evenly',
     // alignItems: 'center',
     backgroundColor: '#1976d2',
-  },
-  header: {
-    height: height * 0.3,
-  },
-  mid: {
-    height: height * 0.7,
   },
 });
