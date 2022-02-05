@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import RewardsSection from './RewardsSection';
 import ServicesSection from './ServicesSection';
-import adImage from '../assets/adImage.jpg';
+import {adImage1} from '../assets/ads';
 import {rightArrow} from '../assets/icons';
 import {lazadaLogo, tealiveLogo, mrdiyLogo} from '../assets/brands';
 
@@ -20,7 +20,7 @@ const HomeScreenMid = () => {
         <RewardsSection />
       </View>
       <View style={styles.adContainer}>
-        <Image source={adImage} style={styles.adImage} />
+        <Image source={adImage1} style={styles.adImage} />
       </View>
       <View style={styles.servicesContainer}>
         <ServicesSection />
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     backgroundColor: 'white',
-    height: height * 0.7,
+    height: height * 0.675,
   },
   rewardContainer: {
     // alignItems: 'center',

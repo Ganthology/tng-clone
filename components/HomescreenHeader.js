@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#1976d2',
     alignItems: 'center',
+    height: height * 0.3,
   },
   horizontalContainer: {
     flexDirection: 'row',
