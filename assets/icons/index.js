@@ -5,6 +5,8 @@ import scanIcon from './scan.png';
 import transferIcon from './transfer.png';
 import dollarIcon from './dollar.png';
 import giftboxIcon from './giftbox.png';
+import moreIcon from './more.png';
+import rightArrow from './right-arrow.png';
 
 export {
   userIcon,
@@ -14,4 +16,6 @@ export {
   transferIcon,
   dollarIcon,
   giftboxIcon,
+  moreIcon,
+  rightArrow,
 };
