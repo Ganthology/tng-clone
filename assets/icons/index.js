@@ -7,6 +7,7 @@ import dollarIcon from './dollar.png';
 import giftboxIcon from './giftbox.png';
 import moreIcon from './more.png';
 import rightArrow from './right-arrow.png';
+import rightArrowTriple from './right-arrow-triple.png';
 import tollIcon from './TollIcon.png';
 import parkingIcon from './ParkingIcon.png';
 import carInsureIcon from './CarInsureIcon.png';
@@ -25,6 +26,7 @@ export {
   giftboxIcon,
   moreIcon,
   rightArrow,
+  rightArrowTriple,
   tollIcon,
   parkingIcon,
   carInsureIcon,
