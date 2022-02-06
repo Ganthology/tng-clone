@@ -8,8 +8,21 @@ import {
   StatusBar,
   Dimensions,
 } from 'react-native';
-import {HomescreenHeader, HomeScreenMid, Highlights} from '../components';
-import {adImage2, adImage3, adImage4} from '../assets/ads';
+import {
+  HomescreenHeader,
+  HomeScreenMid,
+  Highlights,
+  Promotions,
+  MyStatusBar,
+} from '../components';
+import {
+  adImage2,
+  adImage3,
+  adImage4,
+  adImage5,
+  adImage6,
+  adImage7,
+} from '../assets/ads';
 
 const HomeScreen = () => {
   const campaignItems = [
@@ -18,32 +31,27 @@ const HomeScreen = () => {
     {id: 3, image: adImage4},
   ];
 
+  const promotionItems = [
+    {id: 1, image: adImage5, title: 'Find Out More'},
+    {id: 2, image: adImage6, title: 'Grab this voucher'},
+    {id: 3, image: adImage7, title: 'Get It Now'},
+  ];
+
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       {StatusBar.setBarStyle('light-content', true)}
+      <MyStatusBar backgroundColor='#1976d2' barStyle='light-content' />
       <ScrollView>
         <HomescreenHeader />
         <HomeScreenMid />
         <Highlights campaignItems={campaignItems} />
+        <Promotions promotionItems={promotionItems} />
       </ScrollView>
 
-      {/* <View id='Middle section'>
-        <Text>Ads</Text>
-        <Text>Go+, My Rewards</Text>
-        <Text>List of services (Link to another stack)</Text>
-        <Text>Discover more (Link to modal)</Text>
-        <Text>Low Balance reminder</Text>
-      </View> */}
-      {/* <View id='Highlights'>
-        <Text>Flatlist of campaigns (Link to modal)</Text>
-      </View>
-      <View id='Promotions'>
-        <Text>Flatlist of promotions (Link to new stack and modal)</Text>
-      </View>
-      <View id='Footer'>
+      {/* <View id='Footer'>
         <Text>Image of tng logo and Alipay Partner</Text>
       </View> */}
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -55,6 +63,6 @@ const styles = StyleSheet.create({
   container: {
     // justifyContent: 'space-evenly',
     // alignItems: 'center',
-    backgroundColor: '#1976d2',
+    // backgroundColor: 'white',
   },
 });
