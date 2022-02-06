@@ -5,6 +5,8 @@ import bpLogo from './bp.png';
 import ctosLogo from './ctos.png';
 import familymartLogo from './familymart.png';
 import tnbLogo from './tnb.png';
+import tngLogo from './tng.png';
+import alipayLogo from './alipay.png';
 
 export {
   lazadaLogo,
@@ -14,4 +16,6 @@ export {
   ctosLogo,
   familymartLogo,
   tnbLogo,
+  tngLogo,
+  alipayLogo,
 };
