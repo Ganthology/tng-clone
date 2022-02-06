@@ -11,6 +11,7 @@ import {
 import {
   HomescreenHeader,
   HomeScreenMid,
+  HomescreenFooter,
   Highlights,
   Promotions,
   MyStatusBar,
@@ -46,6 +47,7 @@ const HomeScreen = () => {
         <HomeScreenMid />
         <Highlights campaignItems={campaignItems} />
         <Promotions promotionItems={promotionItems} />
+        <HomescreenFooter />
       </ScrollView>
 
       {/* <View id='Footer'>
