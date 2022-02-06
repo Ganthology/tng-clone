@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     width: width * 0.9,
-    height: width * 0.825,
+    height: width * 0.7,
     alignItems: 'flex-start',
   },
   horizontalContainer: {
