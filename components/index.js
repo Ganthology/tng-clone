@@ -4,6 +4,7 @@ import Highlights from './Highlights';
 import Promotions from './Promotions';
 import MyStatusBar from './MyStatusBar';
 import HomescreenFooter from './HomescreenFooter';
+import Navbar from './Navbar';
 
 export {
   HomescreenHeader,
@@ -12,4 +13,5 @@ export {
   Promotions,
   MyStatusBar,
   HomescreenFooter,
+  Navbar,
 };

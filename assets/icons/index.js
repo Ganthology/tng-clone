@@ -15,6 +15,7 @@ import walletSafeIcon from './WalletSafeIcon.png';
 import prepaidIcon from './PrepaidIcon.png';
 import billsIcon from './BillsIcon.png';
 import aplusrewardsIcon from './A+RewardsIcon.png';
+import backIcon from './arrow-left.png';
 
 export {
   userIcon,
@@ -34,4 +35,5 @@ export {
   prepaidIcon,
   billsIcon,
   aplusrewardsIcon,
+  backIcon,
 };
