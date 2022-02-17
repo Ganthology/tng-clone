@@ -9,8 +9,15 @@ import {
 } from 'react-native';
 import {userIcon} from '../assets/icons';
 import PaymentOption from './PaymentOption';
+import {useNavigation} from '@react-navigation/native';
 
 const HomescreenHeader = () => {
+  const navigation = useNavigation();
+
+  const accountButtonHandler = () => {
+    navigation.navigate('AccountScreen');
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.horizontalContainer}>
@@ -18,7 +25,9 @@ const HomescreenHeader = () => {
       </View>
       <View style={styles.horizontalContainer}>
         <Text style={styles.balanceLabel}>RM 0.14</Text>
-        <TouchableOpacity style={styles.userButtonContainer}>
+        <TouchableOpacity
+          style={styles.userButtonContainer}
+          onPress={accountButtonHandler}>
           <Image style={styles.userIcon} source={userIcon} />
         </TouchableOpacity>
       </View>
