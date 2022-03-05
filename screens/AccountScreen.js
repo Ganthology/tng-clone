@@ -11,6 +11,23 @@ import {
 } from 'react-native';
 import {MyStatusBar, Navbar} from '../components';
 
+const AccountItems = () => {
+  return (
+    <View style={{flexDirection: 'row'}}>
+      <Text>Icon</Text>
+      <View
+        style={{
+          flexDirection: 'row',
+          borderBottomWidth: '1',
+          borderBottomColor: 'black',
+        }}>
+        <Text>My Tier</Text>
+        <Text>></Text>
+      </View>
+    </View>
+  );
+};
+
 const AccountScreen = () => {
   const {width, height} = Dimensions.get('window');
 
@@ -57,11 +74,33 @@ const AccountScreen = () => {
             width: width * 0.9,
           }}>
           <Text>Lock Icon</Text>
-          <View style={{width: width * 0.75}}>
+          <View style={{width: width * 0.8}}>
             <Text>Upgrade to the PREMIUM tier to unlock more benefits!</Text>
             <Text>Upgrade Now</Text>
           </View>
         </View>
+      </View>
+      <View id={'Bottom Container'}>
+        <View
+          style={{
+            alignSelf: 'center',
+            width: width * 0.9,
+            flexDirection: 'row',
+          }}>
+          <Text>Icon</Text>
+          <View style={{width: width * 0.8}}>
+            <Text>
+              Your account is 70% secure. Make it even safer with face
+              verification now!
+            </Text>
+            <Text>Enable now ></Text>
+          </View>
+        </View>
+        <FlatList
+          data={[1, 2, 0, 0, 0, 0, 0]}
+          renderItem={() => <AccountItems />}
+        />
+        <Text>Version Number</Text>
       </View>
     </View>
   );
